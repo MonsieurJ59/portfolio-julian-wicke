@@ -6,10 +6,9 @@
           <h5 class="mb-3">Julian Wicke</h5>
           <p>Développeur passionné par la création d'expériences web modernes et intuitives.</p>
           <div class="social-links mt-3">
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:votre.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/julian-wicke-8b6ba11b8/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/MonsieurJ59" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:julian.wicke@orange.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
           </div>
         </div>
         
@@ -18,17 +17,17 @@
           <ul class="list-unstyled">
             <li class="mb-2"><router-link to="/">Accueil</router-link></li>
             <li class="mb-2"><router-link to="/experiences">Expériences</router-link></li>
-            <li class="mb-2"><router-link to="/formations">Formations</router-link></li>
-            <li class="mb-2"><router-link to="/projets">Projets</router-link></li>
+            <li class="mb-2"><router-link to="/educations">Formations</router-link></li>
+            <li class="mb-2"><router-link to="/projects">Projets</router-link></li>
           </ul>
         </div>
         
         <div class="col-lg-4">
           <h5 class="mb-3">Contact</h5>
           <p>
-            <i class="fas fa-map-marker-alt me-2"></i> Ville, Pays<br>
-            <i class="fas fa-phone me-2 mt-2 d-inline-block"></i> +33 6 12 34 56 78<br>
-            <i class="fas fa-envelope me-2 mt-2 d-inline-block"></i> votre.email@example.com
+            <i class="fas fa-map-marker-alt me-2"></i>Autour de Lille, Valenciennes, Douai et Belgique<br>
+            <i class="fas fa-phone me-2 mt-2 d-inline-block"></i><a href="tel:+33664485853" aria-label="Phone">+33 6 64 48 58 53</a><br>
+            <i class="fas fa-envelope me-2 mt-2 d-inline-block"></i> <a href="mailto:julian.wicke@orange.fr" aria-label="Email">julian.wicke@orange.fr</a>
           </p>
           <div class="mt-3">
             <span class="badge bg-light text-dark p-2">

@@ -61,64 +61,104 @@ export default {
       filters: ['Tous', 'Web', 'Mobile', 'Design', 'Full Stack'],
       projects: [
         {
-          title: 'Plateforme E-commerce',
-          description: 'Une plateforme e-commerce complète avec système de paiement en ligne et tableau de bord administrateur.',
-          image: 'https://via.placeholder.com/400x250?text=E-commerce+Platform',
-          tags: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe'],
-          date: '2023',
+          title: "Belote Royale",
+          description: "Application web pour organiser des tournois de belote (gestion de tournoi, équipes, rencontres). Monté sous Docker avec front et back séparés.",
+          image: 'https://via.placeholder.com/400x250?text=Belote+Royale',
+          tags: ['Docker', 'Front', 'Back'],
+          date: 'août 2025',
           github: '#',
           demo: '#',
           category: 'Web'
         },
         {
-          title: 'Application de Gestion de Projets',
-          description: 'Outil de gestion de projets collaboratif avec suivi des tâches et gestion des équipes.',
-          image: 'https://via.placeholder.com/400x250?text=Project+Management',
-          tags: ['React', 'Redux', 'Firebase', 'Material-UI'],
-          date: '2023',
+          title: "Mémoire professionnel",
+          description: "Étude sur la veille technologique et l’accompagnement des alternants en développement web, avec recommandations concrètes et enquêtes terrain.",
+          image: 'https://via.placeholder.com/400x250?text=Memoire+pro',
+          tags: ['Recherche', 'Veille', 'Alternance'],
+          date: 'janv. 2025 – juin 2025',
+          github: '#',
+          demo: '#',
+          category: 'Design'
+        },
+        {
+          title: "Ch'te Rhabille",
+          description: "Plateforme web écoresponsable pour valoriser les invendus textiles via une expérience innovante (box mystères). Projet étudiant type start-up.",
+          image: 'https://via.placeholder.com/400x250?text=Ch%27te+Rhabille',
+          tags: ['Web', 'UX', 'Projet'],
+          date: 'déc. 2023 – avr. 2025',
           github: '#',
           demo: '#',
           category: 'Web'
         },
         {
-          title: 'Application Météo Mobile',
-          description: 'Application mobile de prévisions météorologiques en temps réel avec géolocalisation.',
-          image: 'https://via.placeholder.com/400x250?text=Weather+App',
-          tags: ['React Native', 'Expo', 'OpenWeather API'],
-          date: '2022',
-          github: '#',
-          demo: '#',
-          category: 'Mobile'
-        },
-        {
-          title: 'Portfolio Artistique',
-          description: 'Site vitrine pour un artiste avec galerie interactive et boutique en ligne.',
-          image: 'https://via.placeholder.com/400x250?text=Artist+Portfolio',
-          tags: ['Gatsby', 'GraphQL', 'Contentful', 'Tailwind CSS'],
-          date: '2022',
+          title: 'Maze of Malice',
+          description: "Jeu vidéo 2D rogue-like réalisé sous Unity. Donjon généré aléatoirement, malédictions, objectifs et contrôles clavier.",
+          image: 'https://via.placeholder.com/400x250?text=Maze+of+Malice',
+          tags: ['Unity', 'Game'],
+          date: 'janv. 2025 – févr. 2025',
           github: '#',
           demo: '#',
           category: 'Web'
         },
         {
-          title: 'Système de Réservation en Ligne',
-          description: 'Système de réservation de rendez-vous avec calendrier interactif et notifications.',
-          image: 'https://via.placeholder.com/400x250?text=Booking+System',
-          tags: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets'],
-          date: '2021',
+          title: 'Mon forum anonyme',
+          description: "Projet Dockerisé avec API, DB, services Thread et Sender. CI/CD GitHub, registry, networks et volumes pour persistance et sécurité.",
+          image: 'https://via.placeholder.com/400x250?text=Forum+Anonyme',
+          tags: ['Docker', 'CI/CD', 'API'],
+          date: 'janv. 2024 – mars 2024',
           github: '#',
           demo: '#',
           category: 'Full Stack'
         },
         {
-          title: 'Application de Recettes de Cuisine',
-          description: 'Application mobile pour découvrir et partager des recettes de cuisine.',
-          image: 'https://via.placeholder.com/400x250?text=Recipe+App',
-          tags: ['Flutter', 'Firebase', 'Bloc Pattern'],
-          date: '2021',
+          title: 'Robot de combat sumo',
+          description: "Robot sumo conçu avec Fusion360 (design 3D).",
+          image: 'https://via.placeholder.com/400x250?text=Robot+Sumo',
+          tags: ['Fusion360', '3D'],
+          date: 'janv. 2023 – mai 2023',
           github: '#',
           demo: '#',
-          category: 'Mobile'
+          category: 'Design'
+        },
+        {
+          title: "Escape Game Assassin's Creed Odyssey",
+          description: "Escape Game avec énigmes, carte bois découpée laser, emblème plexiglass (Illustrator).",
+          image: 'https://via.placeholder.com/400x250?text=Escape+Game+AC',
+          tags: ['Design', 'Fabrication'],
+          date: 'sept. 2021 – déc. 2021',
+          github: '#',
+          demo: '#',
+          category: 'Design'
+        },
+        {
+          title: "Jeu de Cartes - AC Odyssey",
+          description: "Jeu de cartes Escape Game (design sous Illustrator).",
+          image: 'https://via.placeholder.com/400x250?text=Jeu+de+Cartes',
+          tags: ['Design', 'Illustrator'],
+          date: 'janv. 2021 – avr. 2021',
+          github: '#',
+          demo: '#',
+          category: 'Design'
+        },
+        {
+          title: 'Olympiades entre amis',
+          description: "Organisation d’un événement ludique (12 participants, défis, quiz interactif, règles, scoring).",
+          image: 'https://via.placeholder.com/400x250?text=Olympiades',
+          tags: ['Organisation', 'Animation'],
+          date: 'sept. 2020 – oct. 2020',
+          github: '#',
+          demo: '#',
+          category: 'Design'
+        },
+        {
+          title: "Quiz sur le thème de l'espace",
+          description: "Premier projet web (HTML, CSS, JS) – Quiz 20 questions avec score et réponses finales.",
+          image: 'https://via.placeholder.com/400x250?text=Quiz+Espace',
+          tags: ['HTML', 'CSS', 'JS'],
+          date: 'janv. 2020 – mai 2020',
+          github: '#',
+          demo: '#',
+          category: 'Web'
         }
       ]
     }

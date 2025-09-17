@@ -4,25 +4,26 @@
     <section class="hero d-flex align-items-center">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+          <div class="col-lg-4 order-lg-2 mb-5 mb-lg-0">
             <div class="text-center">
-              <img src="@/assets/images/profile.svg" alt="Julian Wicke" class="profile-img img-fluid">
+              <img src="@/assets/images/profile.jpeg" alt="Julian Wicke" class="profile-img img-fluid">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <h1 class="display-4 fw-bold mb-3">Julian Wicke</h1>
             <h2 class="h3 text-primary mb-4">Développeur Web Full Stack</h2>
             <p class="lead mb-4">
-              Passionné par le développement web et les nouvelles technologies, je crée des expériences numériques performantes et élégantes.
+              Développeur Full Stack, je conçois et fais évoluer des applications web modernes (Symfony, Docker, CI/CD).
+              J’aime transformer des besoins métiers en solutions fiables, performantes et utiles au quotidien.
             </p>
             <div class="d-flex flex-wrap gap-3">
               <a href="#contact" class="btn btn-primary btn-lg">Contactez-moi</a>
-              <a href="/cv.pdf" download class="btn btn-outline-primary btn-lg">Télécharger mon CV</a>
+              <a href="/CV-Julian-Wicke-Web.pdf" download class="btn btn-outline-primary btn-lg">Télécharger mon CV</a>
             </div>
             <div class="social-links mt-4">
-              <a href="https://github.com/username" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com/in/username" target="_blank" class="me-3"><i class="fab fa-linkedin-in"></i></a>
-              <a href="mailto:votre.email@example.com"><i class="fas fa-envelope"></i></a>
+              <a href="https://github.com/MonsieurJ59" target="_blank" class="me-3"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/julian-wicke-8b6ba11b8/" target="_blank" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:julian.wicke@orange.fr"><i class="fas fa-envelope"></i></a>
             </div>
           </div>
         </div>
@@ -61,8 +62,8 @@
                     <i class="fas fa-check-circle fa-2x"></i>
                   </div>
                   <div>
-                    <h4 class="h6 mb-0">UI/UX Design</h4>
-                    <small class="text-muted">Interfaces intuitives</small>
+                    <h4 class="h6 mb-0">Gestion de projet</h4>
+                    <small class="text-muted">Projets digitals</small>
                   </div>
                 </div>
               </div>
@@ -192,8 +193,8 @@ export default {
 }
 
 .profile-img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
   border-radius: 50%;
   object-fit: cover;
   border: 10px solid rgba(255, 255, 255, 0.2);

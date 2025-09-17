@@ -5,66 +5,181 @@
         <h1 class="section-title mb-5">Expériences Professionnelles</h1>
         
         <div class="timeline">
-          <!-- Expérience 1 -->
+          <!-- Orange -->
           <div class="timeline-item">
             <div class="timeline-content">
-              <div class="timeline-date">2022 - Présent</div>
-              <h3>Développeur Full Stack Senior</h3>
-              <h4>Tech Solutions Inc., Paris</h4>
+              <div class="timeline-date">sept. 2023 - août 2025 · 2 ans</div>
+              <h3>Développeur Full Stack - Alternance</h3>
+              <h4>Orange · Villeneuve-d'Ascq, Hauts-de-France, France</h4>
               <ul>
-                <li>Conception et développement d'applications web avec Vue.js et Node.js</li>
-                <li>Optimisation des performances et de l'expérience utilisateur</li>
-                <li>Encadrement d'une équipe de 3 développeurs juniors</li>
-                <li>Mise en place de bonnes pratiques de développement (CI/CD, tests unitaires)</li>
+                <li>Développement de nouvelles fonctionnalités sur une application web interne pour techniciens et managers (pilotage, gestion des tâches, visualisation de données).</li>
+                <li>Technologies: Symfony, Docker, Redis (cache), tests automatisés, fixtures.</li>
+                <li>Organisation: recueil des besoins, répartition des tâches, vérification et démos régulières aux managers et utilisateurs.</li>
+                <li>Maintenance: montées de version (Symfony, PHP), intégration de nouveaux composants.</li>
               </ul>
               <div class="tags">
-                <span class="badge bg-primary">Vue.js</span>
-                <span class="badge bg-primary">Node.js</span>
-                <span class="badge bg-primary">MongoDB</span>
-                <span class="badge bg-primary">AWS</span>
+                <span class="badge">Symfony</span>
+                <span class="badge ">Docker</span>
+                <span class="badge ">Redis</span>
+                <span class="badge ">PHP</span>
+                <span class="badge ">HTML</span>
+                <span class="badge ">CSS</span>
+                <span class="badge ">Javascript</span>
+                <span class="badge ">SQL</span>
+                <span class="badge ">SharePoint</span>
+                <span class="badge ">Travail d'équipe</span>
               </div>
             </div>
           </div>
 
-          <!-- Expérience 2 -->
+          <!-- Gores Pneus Cars -->
           <div class="timeline-item">
             <div class="timeline-content">
-              <div class="timeline-date">2019 - 2022</div>
-              <h3>Développeur Front-end</h3>
-              <h4>WebAgency, Lyon</h4>
+              <div class="timeline-date">janv. 2025 - juil. 2025 · 7 mois</div>
+              <h3>Développeur Full Stack - Projet de fin d'études</h3>
+              <h4>Gores Pneus Cars · Quiévrain, Belgique (Projet de fin d'études - MyDigitalSchool)</h4>
               <ul>
-                <li>Développement d'interfaces utilisateur réactives avec React</li>
-                <li>Intégration de maquettes PSD en HTML/CSS responsive</li>
-                <li>Collaboration avec les designers pour améliorer l'UX/UI</li>
-                <li>Optimisation des performances de chargement</li>
+                <li>Conception et réalisation d'un site vitrine avec backoffice sécurisé pour la gestion de contenu.</li>
+                <li>Déploiement Docker, hébergement (HTTPS) sur Hostinger, pipeline CI/CD automatisé.</li>
+                <li>Fonctionnalités: tarifs, domaines d’activité, historique, services, localisation, formulaire de contact.</li>
+                <li>Responsabilités: front/back, charte graphique, responsive, échanges réguliers avec le client.</li>
               </ul>
               <div class="tags">
-                <span class="badge bg-primary">React</span>
-                <span class="badge bg-primary">Redux</span>
-                <span class="badge bg-primary">Sass</span>
-                <span class="badge bg-primary">Webpack</span>
+                <span class="badge ">Symfony</span>
+                <span class="badge ">Docker</span>
+                <span class="badge ">CI/CD</span>
+                <span class="badge ">PHP</span>
+                <span class="badge ">HTML</span>
+                <span class="badge ">CSS</span>
+                <span class="badge ">Gestion VPS</span>
+                <span class="badge ">HTTPS</span>
               </div>
             </div>
           </div>
 
-          <!-- Expérience 3 -->
+          <!-- Infotel -->
           <div class="timeline-item">
             <div class="timeline-content">
-              <div class="timeline-date">2017 - 2019</div>
-              <h3>Développeur Web Junior</h3>
-              <h4>StartUp Innovante, Toulouse</h4>
+              <div class="timeline-date">sept. 2022 - sept. 2023 · 1 an 1 mois</div>
+              <h3>Développeur Full Stack - Alternance</h3>
+              <h4>Infotel · Lezennes, Hauts-de-France, France</h4>
               <ul>
-                <li>Développement de fonctionnalités front-end et back-end</li>
-                <li>Maintenance et évolution du site web</li>
-                <li>Résolution de bugs et amélioration des performances</li>
-                <li>Rédaction de documentation technique</li>
+                <li>Maintenance et évolution d'une application interne (congés, organisation d'équipes et de projets).</li>
+                <li>Travail en équipe (alternants) à distance, Kanban, Jira, daily meetings et points hebdomadaires.</li>
               </ul>
               <div class="tags">
-                <span class="badge bg-primary">JavaScript</span>
-                <span class="badge bg-primary">PHP</span>
-                <span class="badge bg-primary">MySQL</span>
-                <span class="badge bg-primary">jQuery</span>
+                <span class="badge ">AngularJS</span>
+                <span class="badge ">Node.js</span>
+                <span class="badge ">HTML</span>
+                <span class="badge ">CSS</span>
+                <span class="badge ">Javascript</span>
+                <span class="badge ">Kanban</span>
+                <span class="badge ">Jira</span>            
+                <span class="badge ">Git</span>            
+                <span class="badge ">Travail d'équipe</span>            
               </div>
+            </div>
+          </div>
+
+          <!-- Auto-entrepreneur -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">nov. 2020 - mars 2024 · 3 ans 5 mois</div>
+              <h3>Coursier (Auto-entrepreneur)</h3>
+              <h4>Micro-entreprise</h4>
+              <ul>
+                <li>Gestion d'une activité de livraison: optimisation des trajets, relation client, gestion administrative.</li>
+                <li>Client principal: Pizzeria Pizza Per Tutti.</li>
+              </ul>
+              <div class="tags">
+                <span class="badge ">Logistique</span>
+                <span class="badge ">Relation client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- flunch -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">mai 2022 - juil. 2022 · 3 mois</div>
+              <h3>Employé Service Restauration - CDD</h3>
+              <h4>flunch · Petite-Forêt, Hauts-de-France, France</h4>
+            </div>
+          </div>
+
+          <!-- Hiolle Industries -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">mai 2022 · 1 mois</div>
+              <h3>Développeur Web - Stage</h3>
+              <h4>HIOLLE INDUSTRIES · Prouvy, Hauts-de-France, France</h4>
+              <ul>
+                <li>Développement d'un site Symfony agrégant plusieurs bases de données.</li>
+                <li>Fonctionnalités: auth, CRUD, tri, recherche par catégorie, formulaire d'onboarding (imprimable).</li>
+              </ul>
+              <div class="tags">
+                <span class="badge ">Symfony</span>
+                <span class="badge ">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Livreur -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">nov. 2020 - juil. 2021 · 9 mois</div>
+              <h3>Livreur - Indépendant</h3>
+              <h4>Pizza Per Tutti · Thun-Saint-Amand, Hauts-de-France, France</h4>
+              <ul>
+                <li>En étant Coursier Indépendant (auto-entrepreneur), je livrais en fin de journée pour la pizzeria.</li>
+              </ul>
+              <div class="tags">
+                <span class="badge ">Encaissement des commandes</span>
+                <span class="badge ">Prise de commande</span>
+                <span class="badge ">Livraison</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deprecq -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">mai 2021 - juin 2021 · 2 mois</div>
+              <h3>Opérateur Polyvalent - Stage/CDD</h3>
+              <h4>Deprecq · Raismes, Hauts-de-France, France</h4>
+              <ul>
+                <li>Gestion des stokes</li>
+                <li>Installation de structures dans l'entreprise</li>
+                <li>Dégrafage de pièces métaliques après la sortie aux découpages lasers</li>
+              </ul>
+              <div class="tags">
+                <span class="badge ">Soudure</span>
+                <span class="badge ">Gestion des stocks</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agrati -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">juin 2018 · 2 semaines</div>
+              <h3>Découverte en Entreprise - Stage</h3>
+              <h4>Agrati Group · Vieux-Condé, Hauts-de-France, France</h4>
+              <ul>
+                <li>Dans le cadre d'un stage de Seconde au lycée, j'ai pu découvrir le monde de l'industrie.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Alstom -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">janv. 2017 · 1 semaine</div>
+              <h3>Découverte en Entreprise - Stage</h3>
+              <h4>Alstom · Petite-Forêt, Hauts-de-France, France</h4>
+              <ul>
+                <li>Dans le cadre d'un stage de 3ème au collège, j'ai pu découvrir le monde de l'industrie.</li>
+              </ul>
             </div>
           </div>
         </div>

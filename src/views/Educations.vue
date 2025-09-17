@@ -5,94 +5,139 @@
         <h1 class="section-title mb-5">Formation & Diplômes</h1>
         
         <div class="row">
-          <!-- Formation 1 -->
+          <!-- MBA MyDigitalSchool -->
           <div class="col-lg-6 mb-4">
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2020 - 2022</span>
-                  <span class="text-muted">Paris, France</span>
+                  <span class="badge bg-primary">2023 - 2025</span>
+                  <span class="text-muted">Lille, France</span>
                 </div>
-                <h3 class="h4">Master en Développement Web Avancé</h3>
-                <h4 class="h5 text-muted mb-3">Université de Paris</h4>
+                <h3 class="h4">MBA Manager de projet web digital - Développement Full Stack</h3>
+                <h4 class="h5 text-muted mb-3">MyDigitalSchool</h4>
                 <p class="card-text">
-                  Spécialisation en architectures web évolutives et expériences utilisateur avancées.
-                  Mémoire de recherche sur l'optimisation des performances des applications web modernes.
+                  <ul>
+                    <li>Titre RNCP34394</li>
+                    <li>Formation axée sur la stratégie web-digital, la conduite de projets, le développement web/mobile et la conception d'expériences utilisateur.</li>
+                  </ul>
                 </p>
                 <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">Architecture logicielle</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Performance web</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">UX avancé</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Stratégie digitale</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Gestion de projet</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Développement Full Stack</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Jeux vidéo</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Sécurité de l'IT</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Relation client</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Formation 2 -->
+          <!-- Licence Science du numérique -->
           <div class="col-lg-6 mb-4">
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2017 - 2020</span>
-                  <span class="text-muted">Lyon, France</span>
+                  <span class="badge bg-primary">2020 - 2023</span>
+                  <span class="text-muted">Lille, France</span>
                 </div>
-                <h3 class="h4">Licence en Informatique</h3>
-                <h4 class="h5 text-muted mb-3">Université Claude Bernard Lyon 1</h4>
+                <h3 class="h4">Licence Science du numérique</h3>
+                <h4 class="h5 text-muted mb-3">Université catholique de Lille</h4>
                 <p class="card-text">
-                  Formation complète en informatique avec spécialisation en développement web.
-                  Projets pratiques incluant le développement d'applications complètes.
+                  <ul>
+                    <li>Responsable événement FGES Esport (2021-2022)</li>
+                    <li>Résultat: 180/180 ECTS</li>
+                  </ul>
                 </p>
                 <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">Algorithmique</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Bases de données</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Programmation</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Sécurité</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Jeux vidéo</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Analyse de données</span>
                   <span class="badge bg-light text-dark me-2 mb-2">Développement web</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Formation 3 -->
+          <!-- Bac S SI -->
           <div class="col-lg-6 mb-4">
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2015 - 2017</span>
-                  <span class="text-muted">Toulouse, France</span>
+                  <span class="badge bg-primary">2017 - 2020</span>
+                  <span class="text-muted">Saint-Amand-les-Eaux, France</span>
                 </div>
-                <h3 class="h4">BTS Services Informatiques aux Organisations</h3>
-                <h4 class="h5 text-muted mb-3">Lycée des Métiers du Numérique</h4>
+                <h3 class="h4">Baccalauréat scientifique - Sciences de l'ingénieur</h3>
+                <h4 class="h5 text-muted mb-3">Lycée Polyvalent Ernest Couteaux</h4>
                 <p class="card-text">
-                  Option SLAM (Solutions Logicielles et Applications Métiers).
-                  Formation axée sur le développement d'applications et la gestion de projets.
+                  <ul>
+                    <li>Spécialité Informatique & Sciences du Numérique</li>
+                    <li>Option Informatique</li>
+                    <li>Mention Bien</li>
+                  </ul>
                 </p>
                 <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">Développement</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Gestion de projet</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Réseaux</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">HTML</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">CSS</span>
+                  <span class="badge bg-light text-dark me-2 mb-2">Javascript</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Formation 4 -->
+          <!-- DNB -->
           <div class="col-lg-6 mb-4">
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2021</span>
-                  <span class="text-muted">En ligne</span>
+                  <span class="badge bg-primary">2013 - 2017</span>
+                  <span class="text-muted">Mortagne-du-Nord, France</span>
                 </div>
-                <h3 class="h4">Certification AWS Certified Developer</h3>
-                <h4 class="h5 text-muted mb-3">Amazon Web Services</h4>
+                <h3 class="h4">Diplôme national du brevet des collèges</h3>
+                <h4 class="h5 text-muted mb-3">Collège Fernig</h4>
                 <p class="card-text">
-                  Validation des compétences en développement et déploiement d'applications sur AWS.
-                  Maîtrise des services cloud essentiels et des bonnes pratiques de développement.
+                  <ul>
+                    <li>Mention Très Bien</li>
+                  </ul>
                 </p>
-                <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">AWS</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Cloud Computing</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="h4 mt-4 mb-3">Licences & Certifications</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary">janv. 2024</span>
                 </div>
+                <h3 class="h5 mb-1">SecNum Académie</h3>
+                <h4 class="h6 text-muted">ANSSI</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary">juin 2020</span>
+                </div>
+                <h3 class="h5 mb-1">Permis de conduire</h3>
+                <h4 class="h6 text-muted">Ministère de l'Intérieur</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge bg-primary">févr. 2019</span>
+                </div>
+                <h3 class="h5 mb-1">Journée Défense et Citoyenneté</h3>
+                <h4 class="h6 text-muted">Ministère des Armées · ID 2259013437</h4>
               </div>
             </div>
           </div>

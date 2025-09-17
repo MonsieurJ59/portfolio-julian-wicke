@@ -19,17 +19,17 @@ const routes = [
     }
   },
   {
-    path: '/formations',
-    name: 'formations',
-    component: () => import('../views/Formations.vue'),
+    path: '/educations',
+    name: 'educations',
+    component: () => import('../views/Educations.vue'),
     meta: {
       title: 'Formation & Diplômes | Julian Wicke'
     }
   },
   {
-    path: '/projets',
-    name: 'projets',
-    component: () => import('../views/Projets.vue'),
+    path: '/projects',
+    name: 'projects',
+    component: () => import('../views/Projects.vue'),
     meta: {
       title: 'Mes Projets | Julian Wicke'
     }

@@ -4,7 +4,7 @@
       <div class="flex flex-col md:flex-row justify-between">
         <div class="mb-4 md:mb-0">
           <h3 class="text-xl font-bold mb-2">Contact</h3>
-          <p>Email: votre.email@example.com</p>
+          <p>Email: julian.wicke@orange.fr</p>
           <p>Téléphone: +33 6 XX XX XX XX</p>
         </div>
         <div>
