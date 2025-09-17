@@ -22,10 +22,10 @@
             <router-link class="nav-link" to="/experiences">Expériences</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/formations">Formations</router-link>
+            <router-link class="nav-link" to="/educations">Formations</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/projets">Projets</router-link>
+            <router-link class="nav-link" to="/projects">Projets</router-link>
           </li>
           <li class="nav-item ms-lg-3">
             <a class="btn btn-primary" href="/cv.pdf" download>

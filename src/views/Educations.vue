@@ -1,5 +1,5 @@
 <template>
-  <div class="formations-page">
+  <div class="educations-page">
     <section class="py-5">
       <div class="container">
         <h1 class="section-title mb-5">Formation & Diplômes</h1>
