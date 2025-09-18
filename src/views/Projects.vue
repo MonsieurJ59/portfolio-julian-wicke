@@ -331,7 +331,7 @@ export default {
 }
 .section-title::after {
   content:''; position:absolute; width:200px; height:3px; background-color: var(--secondary-color);
-  bottom:-10px; left:50%; transform: translateX(-50%);
+  bottom:-10px; left:45%; transform: translateX(-50%);
 }
 
 .btn-group { border-radius:50px; overflow:hidden; box-shadow: 0 3px 10px rgba(0,0,0,.1); display:inline-flex; flex-wrap:wrap; justify-content:center; }

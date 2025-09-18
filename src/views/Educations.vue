@@ -222,7 +222,7 @@ export default {
 .section-title::after {
   content: '';
   position: absolute;
-  width: 450px;
+  width: 90%;
   height: 3px;
   background-color: var(--secondary-color);
   bottom: -10px;

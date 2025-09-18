@@ -44,31 +44,54 @@ export default {
         ]
       },
 
-      // SKILLS (groupées en 2 colonnes)
+      // SKILLS (4 catégories)
       skillGroups: [
         {
-          title: 'Front-end',
-          icon: 'fas fa-laptop-code',
+          title: 'Langages',
+          icon: 'fas fa-code',
           items: [
-            { name: 'HTML5',        percentage: 95 },
-            { name: 'CSS',        percentage: 85 },
-            { name: 'JavaScript (ES6+)',   percentage: 80 },
-            { name: 'Vue.js',      percentage: 60 },
-            { name: 'React',      percentage: 30 },
+            { name: 'HTML', percentage: 95 },
+            { name: 'CSS', percentage: 85 },
+            { name: 'PHP', percentage: 80 },
+            { name: 'SQL', percentage: 80 },
+            { name: 'JavaScript', percentage: 60 },
+            { name: 'Python', percentage: 50 },
+            { name: 'TypeScript', percentage: 40 },
+            { name: 'C & C++ & C#', percentage: 40 },
+            { name: 'Java', percentage: 10 },
           ]
         },
         {
-          title: 'Back-end & Outils',
-          icon: 'fas fa-server',
+          title: 'Frameworks',
+          icon: 'fas fa-layer-group',
           items: [
-            { name: 'Git',     percentage: 95 },
-            { name: 'Symfony',     percentage: 90 },
-            { name: 'Bases de données',    percentage: 90 },
-            { name: 'Docker',     percentage: 75 },
-            { name: 'Node.js',             percentage: 70 },
-            { name: 'Python',             percentage: 60 },
-            { name: 'C & C++ & C#',             percentage: 60 },
-            { name: 'Java',             percentage: 20 },
+            { name: 'Symfony', percentage: 90 },
+            { name: 'Vue.js', percentage: 60 },
+            { name: 'AngularJS', percentage: 40 },
+            { name: 'React', percentage: 30 },
+            { name: 'Flutter', percentage: 20 },
+          ]
+        },
+        {
+          title: 'Outils / Technologies',
+          icon: 'fas fa-tools',
+          items: [
+            { name: 'Git', percentage: 95 },
+            { name: 'Bases de données', percentage: 80 },
+            { name: 'Docker', percentage: 75 },
+            { name: 'Node.js', percentage: 50 },
+            { name: 'Unity', percentage: 20 },
+          ]
+        },
+        {
+          title: 'Management',
+          icon: 'fas fa-users-cog',
+          items: [
+            { name: 'Travail d’équipe', percentage: 95 },
+            { name: 'Communication', percentage: 90 },
+            { name: 'Rédaction technique', percentage: 90 },
+            { name: 'Analyse demande client', percentage: 80 },
+            { name: 'Gestion de projet', percentage: 75 },
           ]
         }
       ]
@@ -166,37 +189,37 @@ export default {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Compétences -->
-          <div class="col-lg-6">
-            <h3 class="h4 mb-4">Mes compétences techniques</h3>
+    <!-- Compétences -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="section-title mb-5">Mes compétences techniques</h2>
 
-            <div class="row g-4">
-              <div class="col-md-6" v-for="(group, gi) in skillGroups" :key="`sg-${gi}`">
-                <div class="skill-card p-4 rounded h-100">
-                  <h4 class="h5 mb-3">
-                    <i :class="`${group.icon} me-2 text-primary`"></i> {{ group.title }}
-                  </h4>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3" v-for="(group, gi) in skillGroups" :key="`sg-${gi}`">
+            <div class="skill-card p-4 rounded h-100">
+              <h4 class="h5 mb-3">
+                <i :class="`${group.icon} me-2 text-primary`"></i> {{ group.title }}
+              </h4>
 
-                  <ul class="list-unstyled">
-                    <li class="mb-2" v-for="(s, si) in group.items" :key="`sk-${gi}-${si}`">
-                      <div class="d-flex justify-content-between">
-                        <span>{{ s.name }}</span>
-                        <span class="text-muted">{{ s.percentage }}%</span>
-                      </div>
-                      <div class="progress" style="height: 6px;">
-                        <div class="progress-bar bg-primary" :style="{ width: s.percentage + '%' }"></div>
-                      </div>
-                    </li>
-                  </ul>
+              <ul class="list-unstyled">
+                <li class="mb-2" v-for="(s, si) in group.items" :key="`sk-${gi}-${si}`">
+                  <div class="d-flex justify-content-between">
+                    <span>{{ s.name }}</span>
+                    <span class="text-muted">{{ s.percentage }}%</span>
+                  </div>
+                  <div class="progress" style="height: 6px;">
+                    <div class="progress-bar bg-primary" :style="{ width: s.percentage + '%' }"></div>
+                  </div>
+                </li>
+              </ul>
 
-                </div>
-              </div>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
 
@@ -264,7 +287,7 @@ export default {
   position: relative; display: inline-block; margin-bottom: 50px; font-weight: 700; color: var(--primary-color);
 }
 .section-title::after {
-  content: ''; position: absolute; width: 50px; height: 3px; background-color: var(--secondary-color);
+  content: ''; position: absolute; width: 90%; height: 3px; background-color: var(--secondary-color);
   bottom: -10px; left: 0;
 }
 
