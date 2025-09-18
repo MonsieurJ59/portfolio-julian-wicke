@@ -1,4 +1,6 @@
 <script>
+import profileFallback from '@/assets/images/profile.jpeg';
+
 export default {
   name: 'FormationsView',
   metaInfo: {
@@ -6,6 +8,7 @@ export default {
   },
   data() {
     return {
+      defaultEducationImage: profileFallback,
       educations: [
         {
           years: '2023 - 2025',
@@ -23,7 +26,8 @@ export default {
             'Jeux vidéo',
             'Sécurité de l\'IT',
             'Relation client'
-          ]
+          ],
+          image: './src/assets/images/educations/mds.png'
         },
         {
           years: '2020 - 2023',
@@ -40,7 +44,8 @@ export default {
             'Jeux vidéo',
             'Analyse de données',
             'Développement web'
-          ]
+          ],
+          image: './src/assets/images/educations/fges.png'
         },
         {
           years: '2017 - 2020',
@@ -52,7 +57,8 @@ export default {
             'Option Informatique',
             'Mention Bien'
           ],
-          tags: ['HTML', 'CSS', 'Javascript']
+          tags: ['HTML', 'CSS', 'Javascript'],
+          image: './src/assets/images/educations/lycee.png'
         },
         {
           years: '2013 - 2017',
@@ -60,7 +66,8 @@ export default {
           title: 'Diplôme national du brevet des collèges',
           school: 'Collège Fernig',
           bullets: ['Mention Très Bien'],
-          tags: []
+          tags: [],
+          image: './src/assets/images/educations/fernig.png'
         }
       ],
       certifications: [
@@ -93,6 +100,9 @@ export default {
           >
             <div class="card h-100">
               <div class="card-body">
+                <div class="edu-thumb mb-2" aria-hidden="true">
+                  <img :src="e.image || defaultEducationImage" :alt="e.school" />
+                </div>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-primary">{{ e.years }}</span>
                   <span class="text-muted">{{ e.location }}</span>
@@ -168,6 +178,22 @@ export default {
 
 .card-body {
   padding: 2rem;
+}
+
+.edu-thumb {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  background: #f8f9fa;
+}
+.edu-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .badge {

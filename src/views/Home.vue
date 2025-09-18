@@ -12,7 +12,7 @@ export default {
         pitch:
           "Développeur Full Stack, je conçois et fais évoluer des applications web modernes (Symfony, Docker, CI/CD). J’aime transformer des besoins métiers en solutions fiables, performantes et utiles au quotidien.",
         buttons: [
-          { label: 'Contactez-moi', href: '#contact', variant: 'btn-primary' },
+          { label: 'Contactez-moi', variant: 'btn-primary', action: 'openContact' },
           { label: 'Télécharger mon CV', href: '/CV-Julian-Wicke-Web.pdf', variant: 'btn-outline-primary', download: true }
         ]
       },
@@ -22,6 +22,15 @@ export default {
         { label: 'Email',    href: 'mailto:julian.wicke@orange.fr', icon: 'fas fa-envelope' }
       ],
       profileImg: profileFallback, // si tu changes l’URL, on garde ce fallback
+      showContactModal: false,
+      contacts: {
+        location: 'Autour de Lille, Valenciennes, Douai et Belgique',
+        phone: '+33 6 64 48 58 53',
+        phoneHref: 'tel:+33664485853',
+        email: 'julian.wicke@orange.fr',
+        emailHref: 'mailto:julian.wicke@orange.fr',
+        availability: 'Disponible pour de nouvelles opportunités'
+      },
 
       // ABOUT
       about: {
@@ -98,15 +107,22 @@ export default {
             <p class="lead mb-4">{{ hero.pitch }}</p>
 
             <div class="d-flex flex-wrap gap-3">
-              <a v-for="(btn, i) in hero.buttons"
-                 :key="`cta-${i}`"
-                 :href="btn.href"
-                 :download="btn.download || null"
-                 :class="['btn','btn-lg', btn.variant]"
-                 :target="btn.target || null"
-                 rel="noopener">
-                {{ btn.label }}
-              </a>
+              <template v-for="(btn, i) in hero.buttons" :key="`cta-${i}`">
+                <button v-if="btn.action === 'openContact'"
+                        type="button"
+                        :class="['btn','btn-lg', btn.variant]"
+                        @click="showContactModal = true">
+                  {{ btn.label }}
+                </button>
+                <a v-else
+                   :href="btn.href"
+                   :download="btn.download || null"
+                   :class="['btn','btn-lg', btn.variant]"
+                   :target="btn.target || null"
+                   rel="noopener">
+                  {{ btn.label }}
+                </a>
+              </template>
             </div>
 
             <div class="social-links mt-4">
@@ -183,6 +199,45 @@ export default {
 
       </div>
     </section>
+
+    <!-- Modale Contact -->
+    <div v-if="showContactModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle" @click="showContactModal = false">
+      <div class="modal-card" @click.stop>
+        <div class="modal-header">
+          <h3 id="contactModalTitle" class="modal-title">Me contacter</h3>
+          <button class="btn-close" type="button" aria-label="Fermer" @click="showContactModal = false">×</button>
+        </div>
+        <div class="modal-body">
+          <ul class="contact-list mb-3">
+            <li class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>{{ contacts.location }}</span>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a :href="contacts.phoneHref">{{ contacts.phone }}</a>
+            </li>
+            <li class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a :href="contacts.emailHref">{{ contacts.email }}</a>
+            </li>
+          </ul>
+          <div class="mb-3">
+            <span class="availability-badge">
+              <i class="fas fa-circle text-success me-1"></i> {{ contacts.availability }}
+            </span>
+          </div>
+          <hr>
+          <p class="mb-2">Réseaux</p>
+          <ul class="contact-list">
+            <li class="contact-item" v-for="(s, i) in social" :key="`contact-${i}`">
+              <i :class="s.icon"></i>
+              <a :href="s.href" target="_blank" rel="noopener">{{ s.label }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -236,5 +291,57 @@ export default {
   .profile-img { width: 220px; height: 220px; margin: 0 auto 30px; }
   .section-title::after { left: 50%; transform: translateX(-50%); }
   .social-links { justify-content: center; }
+}
+
+/* Modal de contact */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+.modal-card {
+  background: #fff;
+  width: min(560px, 92vw);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #eee;
+}
+.modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+.btn-close {
+  background: transparent;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-body { padding: 1.25rem; }
+.contact-list { list-style: none; padding: 0; margin: 0; }
+.contact-item { display: flex; align-items: center; gap: .75rem; padding: .5rem 0; }
+.contact-item i { color: var(--secondary-color); font-size: 1.1rem; width: 22px; text-align: center; }
+.contact-item a { color: var(--primary-color); text-decoration: none; }
+.contact-item a:hover { text-decoration: underline; }
+
+.availability-badge {
+  display: inline-block;
+  background-color: #f8f9fa;
+  color: var(--primary-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 </style>

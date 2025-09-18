@@ -1,4 +1,6 @@
 <script>
+import profileFallback from '@/assets/images/profile.jpeg';
+
 export default {
   name: 'ExperiencesView',
   metaInfo: {
@@ -6,6 +8,7 @@ export default {
   },
   data() {
     return {
+      defaultExperienceImage: profileFallback,
       experiences: [
         {
           date: "sept. 2023 - août 2025 · 2 ans",
@@ -20,7 +23,8 @@ export default {
           tags: [
             "Symfony","Docker","Redis","PHP","HTML","CSS",
             "Javascript","SQL","SharePoint","Travail d'équipe"
-          ]
+          ],
+          image: './src/assets/images/experiences/orange.png'
         },
         {
           date: "janv. 2025 - juil. 2025 · 7 mois",
@@ -32,7 +36,8 @@ export default {
             "Fonctionnalités: tarifs, domaines d’activité, historique, services, localisation, formulaire de contact.",
             "Responsabilités: front/back, charte graphique, responsive, échanges réguliers avec le client."
           ],
-          tags: ["Symfony","Docker","CI/CD","PHP","HTML","CSS","Gestion VPS","HTTPS"]
+          tags: ["Symfony","Docker","CI/CD","PHP","HTML","CSS","Gestion VPS","HTTPS"],
+          image: './src/assets/images/experiences/gores.png'  
         },
         {
           date: "sept. 2022 - sept. 2023 · 1 an 1 mois",
@@ -42,7 +47,8 @@ export default {
             "Maintenance et évolution d'une application interne (congés, organisation d'équipes et de projets).",
             "Travail en équipe (alternants) à distance, Kanban, Jira, daily meetings et points hebdomadaires."
           ],
-          tags: ["AngularJS","Node.js","HTML","CSS","Javascript","Kanban","Jira","Git","Travail d'équipe"]
+          tags: ["AngularJS","Node.js","HTML","CSS","Javascript","Kanban","Jira","Git","Travail d'équipe"],
+          image: './src/assets/images/experiences/infotel.png'
         },
         {
           date: "nov. 2020 - mars 2024 · 3 ans 5 mois",
@@ -52,14 +58,16 @@ export default {
             "Gestion d'une activité de livraison: optimisation des trajets, relation client, gestion administrative.",
             "Client principal: Pizzeria Pizza Per Tutti."
           ],
-          tags: ["Logistique","Relation client"]
+          tags: ["Logistique","Relation client"],
+          image: './src/assets/images/experiences/coursier.png'
         },
         {
           date: "mai 2022 - juil. 2022 · 3 mois",
           title: "Employé Service Restauration - CDD",
           subtitle: "flunch · Petite-Forêt, Hauts-de-France, France",
           bullets: [],
-          tags: []
+          tags: [],
+          image: './src/assets/images/experiences/flunch.png'
         },
         {
           date: "mai 2022 · 1 mois",
@@ -69,7 +77,8 @@ export default {
             "Développement d'un site Symfony agrégant plusieurs bases de données.",
             "Fonctionnalités: auth, CRUD, tri, recherche par catégorie, formulaire d'onboarding (imprimable)."
           ],
-          tags: ["Symfony","MySQL"]
+          tags: ["Symfony","MySQL"],
+          image: './src/assets/images/experiences/hiolle.png'
         },
         {
           date: "nov. 2020 - juil. 2021 · 9 mois",
@@ -78,7 +87,8 @@ export default {
           bullets: [
             "En étant Coursier Indépendant (auto-entrepreneur), je livrais en fin de journée pour la pizzeria."
           ],
-          tags: ["Encaissement des commandes","Prise de commande","Livraison"]
+          tags: ["Encaissement des commandes","Prise de commande","Livraison"],
+          image: './src/assets/images/experiences/pizza.png'
         },
         {
           date: "mai 2021 - juin 2021 · 2 mois",
@@ -89,7 +99,8 @@ export default {
             "Installation de structures dans l'entreprise",
             "Dégrafage de pièces métaliques après la sortie aux découpages lasers"
           ],
-          tags: ["Soudure","Gestion des stocks"]
+          tags: ["Soudure","Gestion des stocks"],
+          image: './src/assets/images/experiences/deprecq.png'
         },
         {
           date: "juin 2018 · 2 semaines",
@@ -98,7 +109,8 @@ export default {
           bullets: [
             "Dans le cadre d'un stage de Seconde au lycée, j'ai pu découvrir le monde de l'industrie."
           ],
-          tags: []
+          tags: [],
+          image: './src/assets/images/experiences/agrati.png'
         },
         {
           date: "janv. 2017 · 1 semaine",
@@ -107,7 +119,8 @@ export default {
           bullets: [
             "Dans le cadre d'un stage de 3ème au collège, j'ai pu découvrir le monde de l'industrie."
           ],
-          tags: []
+          tags: [],
+          image: './src/assets/images/experiences/alstom.png'
         }
       ]
     };
@@ -128,6 +141,9 @@ export default {
             class="timeline-item"
           >
             <div class="timeline-content">
+              <div class="timeline-thumb" aria-hidden="true">
+                <img :src="exp.image || defaultExperienceImage" :alt="exp.title" />
+              </div>
               <div class="timeline-date">{{ exp.date }}</div>
               <h3>{{ exp.title }}</h3>
               <h4>{{ exp.subtitle }}</h4>
@@ -187,6 +203,24 @@ export default {
     position: relative;
     transition: all 0.3s ease;
   }
+  .timeline-thumb {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    background: #f8f9fa;
+  }
+  .timeline-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
   .timeline-item:hover .timeline-content {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -228,5 +262,6 @@ export default {
     .timeline-item:nth-child(even) { left: 0; }
     .timeline-item::after { left: 10px; right: auto; }
     .timeline-item:nth-child(even)::after { left: 10px; }
+    .timeline-thumb { left: 40px; }
   }
 </style>
