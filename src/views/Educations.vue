@@ -1,4 +1,6 @@
 <script>
+// Map des images pour résolution en production
+const IMAGES = import.meta.glob('@/assets/images/**/*', { eager: true, import: 'default' });
 import profileFallback from '@/assets/images/profile.jpeg';
 
 export default {
@@ -81,6 +83,17 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    resolveImage(p) {
+      if (!p) return this.defaultEducationImage;
+      if (/^(https?:)?\//.test(p)) return p;
+      const clean = p.replace(/^\.?\/?src\/assets\/images\//, '');
+      for (const [k, v] of Object.entries(IMAGES)) {
+        if (k.endsWith('/' + clean)) return v;
+      }
+      return this.defaultEducationImage;
+    }
   }
 };
 </script>
@@ -101,7 +114,7 @@ export default {
             <div class="card h-100">
               <div class="card-body">
                 <div class="edu-thumb mb-2" aria-hidden="true">
-                  <img :src="e.image || defaultEducationImage" :alt="e.school" />
+                  <img :src="resolveImage(e.image)" :alt="e.school" />
                 </div>
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <span class="badge bg-primary">{{ e.years }}</span>

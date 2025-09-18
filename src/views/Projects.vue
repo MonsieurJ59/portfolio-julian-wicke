@@ -1,4 +1,7 @@
 <script>
+// Mappe toutes les images du dossier assets pour un usage en production (Vite build)
+const IMAGES = import.meta.glob('@/assets/images/**/*', { eager: true, import: 'default' });
+
 export default {
   name: 'ProjetsView',
   data() {
@@ -196,6 +199,17 @@ export default {
     }
   },
   methods: {
+    resolveImage(p) {
+      if (!p) return p;
+      if (/^(https?:)?\//.test(p)) return p; // URL absolue ou racine
+      // Nettoie un chemin de type './src/assets/images/...'
+      const clean = p.replace(/^\.?\/?src\/assets\/images\//, '');
+      // Cherche une correspondance par fin de chemin dans la map
+      for (const [k, v] of Object.entries(IMAGES)) {
+        if (k.endsWith('/' + clean)) return v;
+      }
+      return p; // fallback (au cas où)
+    },
     setFilter(filter) {
       this.activeFilter = filter;
     },
@@ -243,7 +257,7 @@ export default {
           >
             <div class="card h-100 project-card">
               <div class="project-image-container">
-                <img :src="project.image" class="card-img-top" :alt="project.title" />
+                <img :src="resolveImage(project.image)" class="card-img-top" :alt="project.title" />
                 <div class="project-links">
                   <!-- <a
                     v-if="project.demo"

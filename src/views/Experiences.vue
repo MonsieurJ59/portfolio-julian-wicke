@@ -1,4 +1,6 @@
 <script>
+// Map des images pour résolution en production
+const IMAGES = import.meta.glob('@/assets/images/**/*', { eager: true, import: 'default' });
 import profileFallback from '@/assets/images/profile.jpeg';
 
 export default {
@@ -124,6 +126,17 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    resolveImage(p) {
+      if (!p) return this.defaultExperienceImage;
+      if (/^(https?:)?\//.test(p)) return p;
+      const clean = p.replace(/^\.?\/?src\/assets\/images\//, '');
+      for (const [k, v] of Object.entries(IMAGES)) {
+        if (k.endsWith('/' + clean)) return v;
+      }
+      return this.defaultExperienceImage;
+    }
   }
 };
 </script>
@@ -142,7 +155,7 @@ export default {
           >
             <div class="timeline-content">
               <div class="timeline-thumb" aria-hidden="true">
-                <img :src="exp.image || defaultExperienceImage" :alt="exp.title" />
+                <img :src="resolveImage(exp.image)" :alt="exp.title" />
               </div>
               <div class="timeline-date">{{ exp.date }}</div>
               <h3>{{ exp.title }}</h3>
