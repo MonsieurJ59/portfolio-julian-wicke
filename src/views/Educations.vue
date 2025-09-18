@@ -1,106 +1,123 @@
+<script>
+export default {
+  name: 'FormationsView',
+  metaInfo: {
+    title: 'Formation & Diplômes | Julian Wicke'
+  },
+  data() {
+    return {
+      educations: [
+        {
+          years: '2023 - 2025',
+          location: 'Lille, France',
+          title: 'MBA Manager de projet web digital - Développement Full Stack',
+          school: 'MyDigitalSchool',
+          bullets: [
+            'Titre RNCP34394',
+            'Formation axée sur la stratégie web-digital, la conduite de projets, le développement web/mobile et la conception d\'expériences utilisateur.'
+          ],
+          tags: [
+            'Stratégie digitale',
+            'Gestion de projet',
+            'Développement Full Stack',
+            'Jeux vidéo',
+            'Sécurité de l\'IT',
+            'Relation client'
+          ]
+        },
+        {
+          years: '2020 - 2023',
+          location: 'Lille, France',
+          title: 'Licence Science du numérique',
+          school: 'Université catholique de Lille',
+          bullets: [
+            'Responsable événement FGES Esport (2021-2022)',
+            'Résultat: 180/180 ECTS'
+          ],
+          tags: [
+            'Programmation',
+            'Sécurité',
+            'Jeux vidéo',
+            'Analyse de données',
+            'Développement web'
+          ]
+        },
+        {
+          years: '2017 - 2020',
+          location: 'Saint-Amand-les-Eaux, France',
+          title: 'Baccalauréat scientifique - Sciences de l\'ingénieur',
+          school: 'Lycée Polyvalent Ernest Couteaux',
+          bullets: [
+            'Spécialité Informatique & Sciences du Numérique',
+            'Option Informatique',
+            'Mention Bien'
+          ],
+          tags: ['HTML', 'CSS', 'Javascript']
+        },
+        {
+          years: '2013 - 2017',
+          location: 'Mortagne-du-Nord, France',
+          title: 'Diplôme national du brevet des collèges',
+          school: 'Collège Fernig',
+          bullets: ['Mention Très Bien'],
+          tags: []
+        }
+      ],
+      certifications: [
+        { date: 'janv. 2024', title: 'SecNum Académie', issuer: 'ANSSI' },
+        { date: 'juin 2020', title: 'Permis de conduire', issuer: "Ministère de l'Intérieur" },
+        {
+          date: 'févr. 2019',
+          title: 'Journée Défense et Citoyenneté',
+          issuer: 'Ministère des Armées',
+          extra: 'ID 2259013437'
+        }
+      ]
+    };
+  }
+};
+</script>
+
 <template>
   <div class="educations-page">
     <section class="py-5">
       <div class="container">
         <h1 class="section-title mb-5">Formation & Diplômes</h1>
-        
+
         <div class="row">
-          <!-- MBA MyDigitalSchool -->
-          <div class="col-lg-6 mb-4">
+          <!-- ÉDUCATIONS -->
+          <div
+            v-for="(e, i) in educations"
+            :key="`edu-${i}`"
+            class="col-lg-6 mb-4"
+          >
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2023 - 2025</span>
-                  <span class="text-muted">Lille, France</span>
+                  <span class="badge bg-primary">{{ e.years }}</span>
+                  <span class="text-muted">{{ e.location }}</span>
                 </div>
-                <h3 class="h4">MBA Manager de projet web digital - Développement Full Stack</h3>
-                <h4 class="h5 text-muted mb-3">MyDigitalSchool</h4>
-                <p class="card-text">
-                  <ul>
-                    <li>Titre RNCP34394</li>
-                    <li>Formation axée sur la stratégie web-digital, la conduite de projets, le développement web/mobile et la conception d'expériences utilisateur.</li>
-                  </ul>
-                </p>
-                <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">Stratégie digitale</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Gestion de projet</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Développement Full Stack</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Jeux vidéo</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Sécurité de l'IT</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Relation client</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Licence Science du numérique -->
-          <div class="col-lg-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2020 - 2023</span>
-                  <span class="text-muted">Lille, France</span>
-                </div>
-                <h3 class="h4">Licence Science du numérique</h3>
-                <h4 class="h5 text-muted mb-3">Université catholique de Lille</h4>
-                <p class="card-text">
-                  <ul>
-                    <li>Responsable événement FGES Esport (2021-2022)</li>
-                    <li>Résultat: 180/180 ECTS</li>
-                  </ul>
-                </p>
-                <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">Programmation</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Sécurité</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Jeux vidéo</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Analyse de données</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Développement web</span>
-                </div>
-              </div>
-            </div>
-          </div>
+                <h3 class="h4">{{ e.title }}</h3>
+                <h4 class="h5 text-muted mb-3">{{ e.school }}</h4>
 
-          <!-- Bac S SI -->
-          <div class="col-lg-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2017 - 2020</span>
-                  <span class="text-muted">Saint-Amand-les-Eaux, France</span>
-                </div>
-                <h3 class="h4">Baccalauréat scientifique - Sciences de l'ingénieur</h3>
-                <h4 class="h5 text-muted mb-3">Lycée Polyvalent Ernest Couteaux</h4>
-                <p class="card-text">
+                <p class="card-text" v-if="e.bullets?.length">
                   <ul>
-                    <li>Spécialité Informatique & Sciences du Numérique</li>
-                    <li>Option Informatique</li>
-                    <li>Mention Bien</li>
+                    <li v-for="(b, bi) in e.bullets" :key="`b-${i}-${bi}`">
+                      {{ b }}
+                    </li>
                   </ul>
                 </p>
-                <div class="mt-3">
-                  <span class="badge bg-light text-dark me-2 mb-2">HTML</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">CSS</span>
-                  <span class="badge bg-light text-dark me-2 mb-2">Javascript</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- DNB -->
-          <div class="col-lg-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="badge bg-primary">2013 - 2017</span>
-                  <span class="text-muted">Mortagne-du-Nord, France</span>
+                <div class="mt-3" v-if="e.tags?.length">
+                  <span
+                    v-for="(tag, ti) in e.tags"
+                    :key="`tag-${i}-${ti}`"
+                    class="badge bg-light text-dark me-2 mb-2"
+                  >
+                    {{ tag }}
+                  </span>
                 </div>
-                <h3 class="h4">Diplôme national du brevet des collèges</h3>
-                <h4 class="h5 text-muted mb-3">Collège Fernig</h4>
-                <p class="card-text">
-                  <ul>
-                    <li>Mention Très Bien</li>
-                  </ul>
-                </p>
               </div>
             </div>
           </div>
@@ -108,53 +125,31 @@
 
         <h2 class="h4 mt-4 mb-3">Licences & Certifications</h2>
         <div class="row">
-          <div class="col-lg-4 mb-3">
+          <!-- CERTIFICATIONS -->
+          <div
+            v-for="(c, i) in certifications"
+            :key="`cert-${i}`"
+            class="col-lg-4 mb-3"
+          >
             <div class="card h-100">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge bg-primary">janv. 2024</span>
+                  <span class="badge bg-primary">{{ c.date }}</span>
                 </div>
-                <h3 class="h5 mb-1">SecNum Académie</h3>
-                <h4 class="h6 text-muted">ANSSI</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge bg-primary">juin 2020</span>
-                </div>
-                <h3 class="h5 mb-1">Permis de conduire</h3>
-                <h4 class="h6 text-muted">Ministère de l'Intérieur</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                  <span class="badge bg-primary">févr. 2019</span>
-                </div>
-                <h3 class="h5 mb-1">Journée Défense et Citoyenneté</h3>
-                <h4 class="h6 text-muted">Ministère des Armées · ID 2259013437</h4>
+                <h3 class="h5 mb-1">{{ c.title }}</h3>
+                <h4 class="h6 text-muted" v-if="c.issuer">
+                  {{ c.issuer }}
+                  <template v-if="c.extra"> · {{ c.extra }}</template>
+                </h4>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'FormationsView',
-  metaInfo: {
-    title: 'Formation & Diplômes | Julian Wicke'
-  }
-}
-</script>
 
 <style scoped>
 .card {
@@ -201,7 +196,7 @@ export default {
 .section-title::after {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 450px;
   height: 3px;
   background-color: var(--secondary-color);
   bottom: -10px;
