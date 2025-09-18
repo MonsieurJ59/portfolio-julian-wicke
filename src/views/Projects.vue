@@ -10,10 +10,21 @@ export default {
           title: 'Belote Royale',
           description:
             'Application web pour organiser des tournois de belote (gestion de tournoi, équipes, rencontres). Monté sous Docker avec front et back séparés.',
-          image: 'https://via.placeholder.com/400x250?text=Belote+Royale',
+          image: './public/projects/belote.png',
           tags: ['Docker', 'React', 'TypeScript', 'Node.js', 'Express', 'CSS', 'HTML'],
-          date: 'août 2025 - ... en cours',
+          date: 'août 2025 - en cours',
           github: 'https://github.com/MonsieurJ59/BeloteRoyale',
+          demo: '#',
+          category: 'Web'
+        },
+        {
+          title: 'Portfolio',
+          description:
+            'Portfolio web développé avec Vue.js où vous vous trouvez actuellement',
+          image: './public/projects/portfolio.png',
+          tags: ['Vue.js', 'CSS', 'HTML'],
+          date: 'sept. 2025',
+          github: 'https://github.com/MonsieurJ59/portfolio-julian-wicke',
           demo: '#',
           category: 'Web'
         },
@@ -21,8 +32,8 @@ export default {
           title: 'Mémoire professionnel',
           description:
             'Étude sur la veille technologique et l’accompagnement des alternants en développement web, avec recommandations concrètes et enquêtes terrain.',
-          image: 'https://via.placeholder.com/400x250?text=Memoire+pro',
-          tags: ['Recherche', 'Veille', 'Alternance'],
+          image: './public/projects/memoire.png',
+          tags: ['Recherche', 'Veille', 'Rédaction', 'Soutenance', 'Sondage'],
           date: 'janv. 2025 – juin 2025',
           github: '#',
           demo: '#',
@@ -32,10 +43,10 @@ export default {
           title: "Ch'te Rhabille",
           description:
             'Plateforme web écoresponsable pour valoriser les invendus textiles via une expérience innovante (box mystères). Projet étudiant type start-up.',
-          image: 'https://via.placeholder.com/400x250?text=Ch%27te+Rhabille',
+          image: './public/projects/chterhabille.png',
           tags: ['Web', 'UX', 'Projet'],
           date: 'déc. 2023 – avr. 2025',
-          github: '#',
+          github: 'https://github.com/LucieGPPE/chterhabille',
           demo: '#',
           category: 'Web'
         },
@@ -43,18 +54,29 @@ export default {
           title: 'Maze of Malice',
           description:
             'Jeu vidéo 2D rogue-like réalisé sous Unity. Donjon généré aléatoirement, malédictions, objectifs et contrôles clavier.',
-          image: 'https://via.placeholder.com/400x250?text=Maze+of+Malice',
-          tags: ['Unity', 'Game'],
+          image: './public/projects/mom.png',
+          tags: ['Unity', 'C#'],
           date: 'janv. 2025 – févr. 2025',
-          github: '#',
+          github: 'https://github.com/MonsieurJ59/Rogue_like',
           demo: '#',
           category: 'Jeux'
+        },
+        {
+          title: 'CineDigital',
+          description:
+            'Premier projet de mobile qui consiste à afficher une liste de films et de les noter en utilisant une API développer à côté',
+          image: './public/projects/flutter.png',
+          tags: ['Flutter', 'API', 'C++', 'Dart', 'AndroidStudio'],
+          date: 'oct. 2024',
+          github: 'https://github.com/MonsieurJ59/CineDigital',
+          demo: '#',
+          category: 'Mobile'
         },
         {
           title: 'Mon forum anonyme',
           description:
             'Projet Dockerisé avec API, DB, services Thread et Sender. CI/CD GitHub, registry, networks et volumes pour persistance et sécurité.',
-          image: 'https://via.placeholder.com/400x250?text=Forum+Anonyme',
+          image: './public/projects/docker.png',
           tags: ['Docker', 'CI/CD', 'API', 'HTML', 'CSS', 'PHP', 'Javascript'],
           date: 'janv. 2024 – mars 2024',
           github: 'https://github.com/MonsieurJ59/MonForumAnonyme',
@@ -64,7 +86,7 @@ export default {
         {
           title: 'API Sans Framework',
           description: 'Ce projet vise à fournir une interface Web simple pour gérer les classes et les étudiants. Il utilise une API REST pour communiquer avec le serveur.',
-          image: 'https://via.placeholder.com/400x250?text=Robot+Sumo',
+          image: './public/projects/api.png',
           tags: ['HTML', 'PHP', 'API', 'Javascript'],
           date: 'nov. 2023 – dec. 2023',
           github: 'https://github.com/MonsieurJ59/WICKE_Julian_API_sans_framework',
@@ -74,9 +96,29 @@ export default {
         {
           title: 'Robot de combat sumo',
           description: 'Robot sumo conçu avec Fusion360 (design 3D).',
-          image: 'https://via.placeholder.com/400x250?text=Robot+Sumo',
-          tags: ['Fusion360', '3D'],
+          image: './public/projects/edn.png',
+          tags: ['Fusion360', '3D', 'Fabrication', 'Arduino', 'Python'],
           date: 'janv. 2023 – mai 2023',
+          github: 'https://github.com/MonsieurJ59/Robot_Serflex',
+          demo: '#',
+          category: 'Autre'
+        },
+        {
+          title: 'Catalogue personnages Marvel',
+          description: 'Premier projet en Vue.js qui utilise un appel API de Marvel Developer Portal.',
+          image: './public/projects/apiMarvel.png',
+          tags: ['Vue.js', 'HTML', 'CSS', 'JS'],
+          date: 'fev. 2023 – avril 2023',
+          github: 'https://github.com/MonsieurJ59/Robot_Serflex',
+          demo: '#',
+          category: 'Web'
+        },
+        {
+          title: 'Conception 3D (Epee Méliodas)',
+          description: 'Conception d\'une épée de l\'anime Seven Deadly Sins Méliodas avec Fusion360.',
+          image: './public/projects/epeeMeliodas.png',
+          tags: ['Fusion360', '3D', 'Design', 'Plan 2D', 'Fabrication'],
+          date: 'oct. 2022 – janv. 2023',
           github: 'https://github.com/MonsieurJ59/Robot_Serflex',
           demo: '#',
           category: 'Autre'
@@ -85,17 +127,17 @@ export default {
           title: "Escape Game Assassin's Creed Odyssey",
           description:
             "Escape Game avec énigmes, carte bois découpée laser, emblème plexiglass (Illustrator).",
-          image: 'https://via.placeholder.com/400x250?text=Escape+Game+AC',
+          image: './public/projects/escapeGameAC.png',
           tags: ['Design', 'Fabrication'],
           date: 'sept. 2021 – déc. 2021',
-          github: '#',
+          github: 'https://github.com/MonsieurJ59/EscapeGameAssassinsCreed',
           demo: '#',
           category: 'Design'
         },
         {
           title: 'Jeu de Cartes - AC Odyssey',
           description: 'Jeu de cartes Escape Game (design sous Illustrator).',
-          image: 'https://via.placeholder.com/400x250?text=Jeu+de+Cartes',
+          image: './public/projects/carteEscapeGame.png',
           tags: ['Design', 'Illustrator'],
           date: 'janv. 2021 – avr. 2021',
           github: '#',
@@ -105,8 +147,8 @@ export default {
         {
           title: 'Olympiades entre amis',
           description:
-            'Organisation d’un événement ludique (12 participants, défis, quiz interactif, règles, scoring) en présentiel.',
-          image: 'https://via.placeholder.com/400x250?text=Olympiades',
+            'Organisation d’un événement ludique (12 participants, défis, quiz interactif, règles, scores) en présentiel.',
+          image: './public/projects/Olympiades.jpeg',
           tags: ['Organisation', 'Animation', 'Jeux', 'Quiz'],
           date: 'sept. 2020 – oct. 2020',
           github: '#',
@@ -129,11 +171,11 @@ export default {
           description:
             'À l\'âge de 12 ans, j\'ai créer mon propre jeu de cartes sur les personnages de l\'univers Marvel avec un système de points de vies et de dégâts en fonction des personnages, ainsi que des cartes spéciales "objets". Une règle propre à ce jeu avait été inventée.',
           image: './public/projects/jeuCarteMarvel.png',
-          tags: ['Cartes', 'Règle de jeu'],
+          tags: ['Conception de cartes', 'Règle de jeu'],
           date: 'juil. 2014',
           github: '#',
           demo: '#',
-          category: 'Web'
+          category: 'Jeux'
         }
       ]
     };
