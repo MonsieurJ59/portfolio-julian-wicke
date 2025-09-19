@@ -353,7 +353,14 @@ export default {
     .timeline-item:nth-child(even) { left: 0; }
     .timeline-item::after { left: 10px; right: auto; }
     .timeline-item:nth-child(even)::after { left: 10px; }
-    .timeline-thumb { left: 40px; }
+    .timeline-thumb {
+      left: 40px;
+      width: 64px;
+      height: 64px;
+      top: -40px;
+    }
+    .timeline-content h3 { font-size: 1.2rem; }
+    .timeline-content h4 { font-size: 1rem; }
   }
 
   /* Modal */

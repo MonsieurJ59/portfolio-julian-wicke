@@ -16,19 +16,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="nav-link" to="/">Accueil</router-link>
+            <router-link class="nav-link" to="/" @click="closeMobileMenu">Accueil</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/experiences">Expériences</router-link>
+            <router-link class="nav-link" to="/experiences" @click="closeMobileMenu">Expériences</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/educations">Formations</router-link>
+            <router-link class="nav-link" to="/educations" @click="closeMobileMenu">Formations</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/projects">Projets</router-link>
+            <router-link class="nav-link" to="/projects" @click="closeMobileMenu">Projets</router-link>
           </li>
           <li class="nav-item ms-lg-3">
-            <a class="btn btn-primary" href="/cv.pdf" download>
+            <a class="btn btn-primary" href="/cv.pdf" download @click="closeMobileMenu">
               Télécharger mon CV
             </a>
           </li>
@@ -56,6 +56,18 @@ export default {
         navbar.classList.add('scrolled');
       } else {
         navbar.classList.remove('scrolled');
+      }
+    },
+    closeMobileMenu() {
+      const collapseEl = document.getElementById('navbarNav');
+      const toggler = this.$el.querySelector('.navbar-toggler');
+      // Si le menu est ouvert (classe Bootstrap 'show'), on le replie
+      if (collapseEl && collapseEl.classList.contains('show')) {
+        collapseEl.classList.remove('show');
+        if (toggler) {
+          toggler.classList.add('collapsed');
+          toggler.setAttribute('aria-expanded', 'false');
+        }
       }
     }
   }
