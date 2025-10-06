@@ -112,7 +112,7 @@ export default {
           image: './src/assets/images/projects/apiMarvel.png',
           tags: ['Vue.js', 'HTML', 'CSS', 'JS'],
           date: 'fev. 2023 – avril 2023',
-          github: 'https://github.com/MonsieurJ59/Robot_Serflex',
+          github: 'https://github.com/MonsieurJ59/API_Marvel',
           demo: '#',
           category: 'Web'
         },
@@ -122,7 +122,7 @@ export default {
           image: './src/assets/images/projects/epeeMeliodas.png',
           tags: ['Fusion360', '3D', 'Design', 'Plan 2D', 'Fabrication'],
           date: 'oct. 2022 – janv. 2023',
-          github: 'https://github.com/MonsieurJ59/Robot_Serflex',
+          github: 'https://github.com/MonsieurJ59/DagueMeliodas_3d',
           demo: '#',
           category: 'Autre'
         },
